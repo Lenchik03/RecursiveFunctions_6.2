@@ -20,36 +20,62 @@
             //string s = Console.ReadLine();
             //int.TryParse(Console.ReadLine(), out int i);
             //int.TryParse(Console.ReadLine(), out int j);
-            //bool res = Simm(s, i ,j);
+            //bool res = Simm(s, i, j);
             //Console.WriteLine(res);
+
+            //int.TryParse(Console.ReadLine(), out int a);
+            //int res = int.Parse( Poradok(a));
+            //Console.WriteLine(res);
+
+            int.TryParse(Console.ReadLine(), out int a);
+            int.TryParse(Console.ReadLine(), out int p);
+            int res = int.Parse(Poradok1(a, p));
+            Console.WriteLine(res);
         }
 
-        //static bool Simm(string s, int i, int j)
-        //{
-        //    if (i > j)
-        //        return true;
-        //    else if (s[i] != s[j])
-        //        return false;
-        //    else
-        //        return Simm(s, i+1, j-1);
-        //}
+        static string Poradok1(int a, int p)
+        {
+            if (a < p)
+                return a.ToString();
+            int b = a % p;
+            return b.ToString() + Poradok1(a / p, p);
+        }
+        //задача 8
+        static string Poradok(int a)
+        {
+            if(a < 10)
+                return a.ToString();
+            int b = a % 10;
+            return b.ToString()+Poradok(a / 10);
+        }
+
+        //задача 6
+        static bool Simm(string s, int i, int j)
+        {
+            if (i > j)
+                return true;
+            else if (s[i] != s[j])
+                return false;
+            else
+                return Simm(s, i + 1, j - 1);
+        }
 
         //задача 7
-        //static int NOD(int a, int b)
-        //{
+        static int NOD(int a, int b)
+        {
 
-        //    if (b == 0) 
-        //    {
+            if (b == 0)
+            {
 
-        //        return a;
+                return a;
 
-        //    }
-        //    else
-        //    {
-        //        return NOD(b, a % b);
-        //    }
+            }
+            else
+            {
+                return NOD(b, a % b);
+            }
 
-        //}
+        }
         //задача 2
         static int CountNumber(int n)
         {
