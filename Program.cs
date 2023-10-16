@@ -32,7 +32,7 @@
             int res = int.Parse(Poradok1(a, p));
             Console.WriteLine(res);
         }
-
+        //задача 9
         static string Poradok1(int a, int p)
         {
             if (a < p)
