@@ -8,10 +8,34 @@
             //int result = CountNumber(num);
             //Console.WriteLine(result);
 
-            int[] array = new int[]{1,6,10,12,1,18,2};
-            int result = Min(array, 3);
-            Console.WriteLine(result);
+            //int[] array = new int[]{1,6,10,12,1,18,2};
+            //int result = Min(array, 3);
+            //Console.WriteLine(result);
+
+            //int.TryParse(Console.ReadLine(), out int a);
+            //int.TryParse(Console.ReadLine(), out int b);
+            //int res = NOD(a, b);
+            //Console.WriteLine(res);
         }
+
+       
+
+        //задача 7
+        //static int NOD(int a, int b)
+        //{
+           
+        //    if (b == 0) 
+        //    {
+            
+        //        return a;
+                
+        //    }
+        //    else
+        //    {
+        //        return NOD(b, a % b);
+        //    }
+            
+        //}
         //задача 2
         static int CountNumber(int n)
         {
@@ -37,10 +61,11 @@
                 return min;
         }
         //задача 6
-        //static int Sim(int S, int I, int J)
+        //static int Simm(int S, int I, int J)
         //{
 
         //}
+
     }
 
 }
