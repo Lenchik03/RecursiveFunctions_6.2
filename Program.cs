@@ -16,25 +16,39 @@
             //int.TryParse(Console.ReadLine(), out int b);
             //int res = NOD(a, b);
             //Console.WriteLine(res);
+
+            //string s = Console.ReadLine();
+            //int.TryParse(Console.ReadLine(), out int i);
+            //int.TryParse(Console.ReadLine(), out int j);
+            //bool res = Simm(s, i ,j);
+            //Console.WriteLine(res);
         }
 
-       
+        //static bool Simm(string s, int i, int j)
+        //{
+        //    if (i > j)
+        //        return true;
+        //    else if (s[i] != s[j])
+        //        return false;
+        //    else
+        //        return Simm(s, i+1, j-1);
+        //}
 
         //задача 7
         //static int NOD(int a, int b)
         //{
-           
+
         //    if (b == 0) 
         //    {
-            
+
         //        return a;
-                
+
         //    }
         //    else
         //    {
         //        return NOD(b, a % b);
         //    }
-            
+
         //}
         //задача 2
         static int CountNumber(int n)
